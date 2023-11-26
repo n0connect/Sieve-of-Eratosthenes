@@ -19,12 +19,11 @@ class Prime:
                     for check in self.primenumbers:
                         if check % number == 0 and check != number:
                             self.primenumbers.remove(check)
-                            # del [self.primenumbers[c heck]]
-                time_calculation_base = 0.7
+                """time_calculation_base = 0.7
                 time_calculation_pow = math.log10(end_number/number)
                 time_calculation: str = str(float(math.pow(time_calculation_base,
                                                            time_calculation_pow)))
-                print(f"\rTime: {time_calculation[:3]} second", end='')
+                print(f"\rTime: {time_calculation[:3]} second", end='')"""
 
             Prime.list_prime_function(self)
         except Exception as es:
